@@ -1,0 +1,179 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.navbar {
+    align-items: center;
+  
+    background-color: #000;
+  
+     color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    /* justify-content: space-evenly; */
+    /* text-align: center;   */
+    
+ } 
+
+
+ .container a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px  #dfe6e9;
+  position: relative;
+ }
+ .container a:before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: all 0.5s linear;
+ }
+ .container a:hover::before{
+    width: 100%;
+    background-color: #6c5ce7;
+ }
+ input{
+    border-radius: 10px;
+    padding: 1px 2px ;
+    height: 25px;
+
+ }
+
+
+.navbar-brand1{
+    margin-left: 80px;
+    display: block;
+    display: flex;
+    margin-top: 11px;
+ 
+}
+
+
+.form-control{
+    border-radius: 10px;
+    height: 20px;
+    justify-content: center;
+    margin-top: 12px;
+    padding-left: 30px;
+  
+    
+}
+
+
+.Card, img {
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+    
+
+}
+
+.Card {
+    align-items: center;
+    background: linear-gradient(#f56464,#fff);
+    border: 1px solid #000;
+    height: auto;
+    justify-content: space-around;
+    margin: 10px;
+    text-align: center;
+    width: 350px;
+    
+
+}
+
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+  
+   
+}
+
+.CardsBody{
+        background: radial-gradient(silver,#000);
+        margin-top: 40px;
+        display: flex;
+  
+}
+
+div {
+    display: block;
+   
+}
+
+
+
+.footer{
+display: flex;
+justify-content: space-evenly;
+background-color: rgb(8, 8, 43);
+scroll-margin-bottom: none;
+
+}
+.inner_footer{
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.span1{
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.div3 {
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.span2{
+    font-weight: bold;
+}
+.span3{
+    font-weight: bold;
+}
+
+
+
+.div4{
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.div5{
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    
+}
+.span4{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.Carousel img{
+    height: 600px;
+    width: 200px;
+}
+
+ 
