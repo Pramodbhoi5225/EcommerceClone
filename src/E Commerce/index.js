@@ -6,10 +6,11 @@ import { Carousel } from "react-responsive-carousel";
 
 let count = 0;
 
-function Index() {
+function Index({search}) {
   const [products, setProducts] = useState([]);
 
   const [cart, setCart] = useState([]);
+  // const [search, setSearch] = useState('');
 
   const getProductsData = async () => {
     const res = await fetch("https://fakestoreapi.com/products");
@@ -19,20 +20,7 @@ function Index() {
     count++;
     
 
-
-
-
-
-
-
-
-
-
   };
-
-
-
-
 
   useEffect(() => {
     getProductsData();
@@ -44,18 +32,22 @@ function Index() {
   function dataRead() {
     alert("Product Added to cart");
   }
-  function ClickCart() {}
+ 
 
 
 function SerchEvent(val){
  console.log(val.target.value);
+
+//  const imp=document.getElementById('InputeSerch').value;
+ 
+
 }
 
 
   return (
     <>
      
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="container">
         <a className=" " href="#">
           Shop😊More
@@ -70,20 +62,24 @@ function SerchEvent(val){
           Service
         </a>
         <a className=" " href="#">
-          <input type="text" placeholder="Serch Here"  onChange={SerchEvent}/>
+          <input type="text" placeholder="Serch Here" id="InputeSerch"  onChange={(e)=>setSearch(e.target.value)}/>
         </a>
         <a className=" " href="#">
         Cart🛒 
         </a>
         </div>
-      </nav>
+      </nav> */}
 
       {/* </div> */}
 
       {/* ///////corousel */}
 
+
+
       <Carousel className="Carousel">
-        {products.map((e) => {
+        {products.filter((item)=> item.category.toLowerCase().includes(search)).map((e) => {
+
+         
           return (
             <div className="cardbody">
               
@@ -101,12 +97,14 @@ function SerchEvent(val){
               </p>
             </div>
           );
-        })}
+        })
+}
+        
       </Carousel>
       {/* //////////////////////SECTION//////////////////////////// */}
 
       <section className="sec">
-        {products.map((e) => {
+      {products.filter((item)=> item.category.toLowerCase().includes(search)).map((e) => {
           return (
             <div className="CardsBody">
               <div className="Card">

@@ -21,6 +21,18 @@
     
  } 
 
+ .menu:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px  #dfe6e9;
+    position: relative;
+ }
+ .menu::before{
+    width: 100%;
+    background-color: #6c5ce7;
+ }
 
  .container a{
   color: white;
@@ -174,6 +186,31 @@ scroll-margin-bottom: none;
 .Carousel img{
     height: 600px;
     width: 200px;
+}       
+
+
+
+
+/* .cart1{
+    background: radial-gradient(silver,black);
+ 
+} */
+
+
+table{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 10px;
+  
 }
 
- 
+
+
+
+tr{
+    width: 100%;
+    background: linear-gradient(white,rgb(241, 125, 125));
+}
+
+
