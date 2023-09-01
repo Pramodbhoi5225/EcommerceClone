@@ -1,12 +1,11 @@
 import React from 'react'
 
-function Index1() {
+function Raect() {
   return (
     <div>
       
-     
     </div>
   )
 }
 
-export default Index1
+export default Raect

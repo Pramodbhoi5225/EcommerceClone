@@ -93,7 +93,7 @@
 
 .Card {
     align-items: center;
-    background: linear-gradient(#f56464,#fff);
+    background: linear-gradient(#f56464,#fff); 
     border: 1px solid #000;
     height: auto;
     justify-content: space-around;
@@ -177,6 +177,9 @@ scroll-margin-bottom: none;
 .span4{
     font-weight: bold;
 }
+.footer2{
+    width: 100%;
+}
 
 
 
@@ -208,9 +211,11 @@ table{
 
 
 
-tr{
+/* tr{
     width: 100%;
     background: linear-gradient(white,rgb(241, 125, 125));
-}
+} */
+
+
 
 

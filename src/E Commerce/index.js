@@ -47,32 +47,7 @@ function SerchEvent(val){
   return (
     <>
      
-      {/* <nav className="navbar">
-        <div className="container">
-        <a className=" " href="#">
-          Shop😊More
-        </a>
-        <a className=" " href="#">
-          Home
-        </a>
-        <a className=" " href="#">
-          Contact
-        </a>
-        <a className=" " href="#">
-          Service
-        </a>
-        <a className=" " href="#">
-          <input type="text" placeholder="Serch Here" id="InputeSerch"  onChange={(e)=>setSearch(e.target.value)}/>
-        </a>
-        <a className=" " href="#">
-        Cart🛒 
-        </a>
-        </div>
-      </nav> */}
-
-      {/* </div> */}
-
-      {/* ///////corousel */}
+     
 
 
 
@@ -82,6 +57,7 @@ function SerchEvent(val){
          
           return (
             <div className="cardbody">
+              <header className="">
               
               <img src={e.image} alt="_blank" />
              
@@ -95,13 +71,14 @@ function SerchEvent(val){
                 </p>
                 <button fdprocessedid="hmjw3t">Add Cart</button>
               </p>
+              </header>
             </div>
           );
         })
-}
+}                               
         
       </Carousel>
-      {/* //////////////////////SECTION//////////////////////////// */}
+      
 
       <section className="sec">
       {products.filter((item)=> item.category.toLowerCase().includes(search)).map((e) => {

@@ -14,13 +14,7 @@ import Navbar from './E Commerce/Navbar';
 
  import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
  import './E Commerce/index.css'
-
-
-
-
-
-
-
+ import './E Commerce/Cart.css' 
 
 let count = 0;
 
@@ -42,25 +36,11 @@ const IncNum = () =>{
 }
   return (
     <div>
-      {/* <App1/>
-      <Changecolor/>
-      <Digital/>
-      <SimpleForm/> */}
-      {/* <Covid/> */}
-      {/* <Data/> */}
+
       <Navbar setShow={setShow} setSearch={setSearch}/>
       {(show)?(<Index search={search}/>):(<Cart/>)}
    
-      
-
-      
-      {/* <h1>{count}</h1>
-    <button onClick={IncNum}>Click Me</button> */}
-
-{/*  book my show */}
-
-
-
+  
     </div>
   )
 }
